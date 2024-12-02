@@ -16,22 +16,22 @@ INSERT INTO Cliente (DNI, localidad, Direccion_cl, Tipo_cliente, Email, Nombre_c
 VALUES
 (72382134, 'Chimbote', 'Av. Brasil', 'Frecuente', 'patri@hotmail.com', 'Patricio', 'Solorzano Quispe', '964562345'),
 (83721853, 'Nuevo Chimbote', 'Av. Argentina', 'Frecuente', 'Carlo5@hotmail.com', 'Carlos', 'Conqui Mamani', '962345764'),
-(12345678, 'Chimbote', 'Av. America', 'Frecuente', 'Antonio20@hotmail.com', 'Antonio', 'García Lu', '941245424'); -- Cambié el DNI para evitar duplicados
+(12345678, 'Chimbote', 'Av. America', 'Frecuente', 'Antonio20@hotmail.com', 'Antonio', 'García Lu', '941245424');
 
 CREATE TABLE Producto (
     Codigo_producto INT PRIMARY KEY AUTO_INCREMENT,
     Nombre_producto VARCHAR(255),
     Descripcion VARCHAR(255),
-    Tamaño_producto DECIMAL(5, 2),
+    Tamano_producto DECIMAL(5, 2), -- Cambiado el nombre
     Tipo_papel VARCHAR(255),
     Impresion VARCHAR(255),
     Acabado VARCHAR(255)
 );
 
-INSERT INTO Producto (Nombre_producto, Descripcion, Tamaño_producto, Tipo_papel, Impresion, Acabado)
+INSERT INTO Producto (Nombre_producto, Descripcion, Tamano_producto, Tipo_papel, Impresion, Acabado)
 VALUES 
 ('Papel Fotográfico', 'Es un papel para imprimir fotos', 27.5, 'Fotografico', 'A4', 'Fino'),
-('Papel Folcote', 'Es un papel rigido tipo carton', 30, 'Folcote', 'A3', 'Grueso'),
+('Papel Folcote', 'Es un papel rígido tipo cartón', 30, 'Folcote', 'A3', 'Grueso'),
 ('Papel Bond', 'Es un papel en blanco', 27.5, 'Bond', 'A4', 'Fino');
 
 CREATE TABLE Departamento (
@@ -79,3 +79,4 @@ VALUES
 (1, 83721853, 1, 40.90, 40.90, 'Recojo en tienda'),
 (2, 12345678, 2, 14.00, 13.99, 'Recojo en tienda'),
 (3, 72382134, 3, 10.00, 8.00, 'Recojo en tienda');
+
