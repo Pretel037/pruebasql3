@@ -2,7 +2,7 @@ CREATE SCHEMA IF NOT EXISTS EXAMEN_PRETEL;
 USE EXAMEN_PRETEL;
 
 -- Eliminar tabla si ya existe
-DROP TABLE IF EXISTS Cliente;
+
 CREATE TABLE Cliente (
     DNI INT PRIMARY KEY,
     localidad VARCHAR(255), 
@@ -21,7 +21,6 @@ VALUES
 (12345678, 'Chimbote', 'Av. America', 'Frecuente', 'Antonio20@hotmail.com', 'Antonio', 'García Lu', '941245424');
 
 -- Eliminar tabla si ya existe
-DROP TABLE IF EXISTS Producto;
 CREATE TABLE Producto (
     Codigo_producto INT PRIMARY KEY AUTO_INCREMENT,
     Nombre_producto VARCHAR(255),
@@ -39,7 +38,6 @@ VALUES
 ('Papel Bond', 'Es un papel en blanco', 27.5, 'Bond', 'A4', 'Fino');
 
 -- Eliminar tabla si ya existe
-DROP TABLE IF EXISTS Departamento;
 CREATE TABLE Departamento (
     Nombre_departamento VARCHAR(255) PRIMARY KEY,
     Email VARCHAR(255)
@@ -52,7 +50,6 @@ VALUES
 ('Trujillo', 'EmpresaTrujillo@gmail.com');
 
 -- Eliminar tabla si ya existe
-DROP TABLE IF EXISTS Empleado;
 CREATE TABLE Empleado (
     DNI INT PRIMARY KEY, 
     nombre VARCHAR(255), 
@@ -72,7 +69,6 @@ VALUES
 (71238582, 'Ana', 'Vega Honores', 'Ana2020@gmail.com', '973891550', 'Av. Lituania', 90.5, 'Ancash');
 
 -- Eliminar tabla si ya existe
-DROP TABLE IF EXISTS Factura;
 CREATE TABLE Factura (
     Nfactura INT PRIMARY KEY,
     DNI_cliente INT,
