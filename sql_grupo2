@@ -27,15 +27,14 @@ CREATE TABLE Producto (
     Descripcion VARCHAR(255),
     `Tamano_producto` DECIMAL(5, 2),
     `Tipo_papel` VARCHAR(255),
-    `Impresion` VARCHAR(255),
-    Acabado VARCHAR(255)
+    `Impresion` VARCHAR(255)
 );
 
-INSERT INTO Producto (Nombre_producto, Descripcion, Tamano_producto, Tipo_papel, Impresion, Acabado)
+INSERT INTO Producto (Nombre_producto, Descripcion, Tamano_producto, Tipo_papel, Impresion)
 VALUES 
-('Papel Fotográfico', 'Es un papel para imprimir fotos', 27.5, 'Fotografico', 'A4', 'Fino'),
-('Papel Folcote', 'Es un papel rígido tipo cartón', 30, 'Folcote', 'A3', 'Grueso'),
-('Papel Bond', 'Es un papel en blanco', 27.5, 'Bond', 'A4', 'Fino');
+('Papel Fotográfico', 'Es un papel para imprimir fotos', 27.5, 'Fotografico', 'A4'),
+('Papel Folcote', 'Es un papel rígido tipo cartón', 30, 'Folcote', 'A3'),
+('Papel Bond', 'Es un papel en blanco', 27.5, 'Bond', 'A4');
 
 -- Eliminar tabla si ya existe
 CREATE TABLE Departamento (
