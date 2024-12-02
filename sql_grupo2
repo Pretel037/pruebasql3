@@ -25,9 +25,9 @@ CREATE TABLE Producto (
     Codigo_producto INT PRIMARY KEY AUTO_INCREMENT,
     Nombre_producto VARCHAR(255),
     Descripcion VARCHAR(255),
-    Tamano_producto DECIMAL(5, 2),
-    Tipo_papel VARCHAR(255),
-    Impresion VARCHAR(255),
+    `Tamano_producto` DECIMAL(5, 2),
+    `Tipo_papel` VARCHAR(255),
+    `Impresion` VARCHAR(255),
     Acabado VARCHAR(255)
 );
 
