@@ -2,7 +2,7 @@ CREATE SCHEMA IF NOT EXISTS EXAMEN_PRETEL;
 USE EXAMEN_PRETEL;
 
 -- Eliminar tabla si ya existe
-
+DROP TABLE IF EXISTS Cliente;
 CREATE TABLE Cliente (
     DNI INT PRIMARY KEY,
     localidad VARCHAR(255), 
@@ -20,6 +20,7 @@ VALUES
 (83721853, 'Nuevo Chimbote', 'Av. Argentina', 'Frecuente', 'Carlo5@hotmail.com', 'Carlos', 'Conqui Mamani', '962345764'),
 (12345678, 'Chimbote', 'Av. America', 'Frecuente', 'Antonio20@hotmail.com', 'Antonio', 'García Lu', '941245424');
 
+DROP TABLE IF EXISTS Producto;
 -- Eliminar tabla si ya existe
 CREATE TABLE Producto (
     Codigo_producto INT PRIMARY KEY AUTO_INCREMENT,
@@ -34,6 +35,7 @@ VALUES
 ('Papel Folcote', 'Es un papel rígido tipo cartón', 30.2, 'Folcote', 'A3'),
 ('Papel Bond', 'Es un papel en blanco', 27.5, 'Bond', 'A4');
 
+DROP TABLE IF EXISTS Departamento;
 -- Eliminar tabla si ya existe
 CREATE TABLE Departamento (
     Nombre_departamento VARCHAR(255) PRIMARY KEY,
@@ -46,6 +48,7 @@ VALUES
 ('Lima', 'EmpresaLima@gmail.com'),
 ('Trujillo', 'EmpresaTrujillo@gmail.com');
 
+DROP TABLE IF EXISTS Empleado;
 -- Eliminar tabla si ya existe
 CREATE TABLE Empleado (
     DNI INT PRIMARY KEY, 
@@ -65,6 +68,7 @@ VALUES
 (65962367, 'Mateo', 'Vera Lopez', 'Mati@gmail.com', '957859431', 'Av. Panchos', 60.5, 'Lima'),
 (71238582, 'Ana', 'Vega Honores', 'Ana2020@gmail.com', '973891550', 'Av. Lituania', 90.5, 'Ancash');
 
+DROP TABLE IF EXISTS Factura;
 -- Eliminar tabla si ya existe
 CREATE TABLE Factura (
     Nfactura INT PRIMARY KEY,
